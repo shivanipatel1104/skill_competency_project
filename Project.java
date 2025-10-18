@@ -18,7 +18,14 @@ public class Project {
             case 1:
                 System.out.println("Enter a number:");
                 userInput1 = scanner.nextInt();
-                //code which calculates the sum of integers from 1 to number entererd and print it
+
+                //calculates the sum of integers from 1 to number entererd and prints it
+                sum = 0;
+                for (int i = 1; i <= userInput1; i++) {
+                    sum += i;
+                }
+                System.out.println("Sum of integers from 1 to " + userInput1 + " is: " + sum);
+                
                 break;
             case 2:
                 System.out.println("Enter a number:");
