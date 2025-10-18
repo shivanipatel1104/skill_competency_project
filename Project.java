@@ -43,8 +43,17 @@ public class Project {
                 System.out.println("Enter the length of sequence");
                 length = scanner.nextInt();
                 System.out.println("Enter the sequence");
-                int oddCount = 0;
+
                 //code that calculates the count of odd integers and prints it
+                int oddCount = 0;
+                for (int i = 0; i < length; i++) {
+                    int num = scanner.nextInt();
+                    if (num % 2 != 0) {
+                        oddCount++;
+                    }
+                }
+                System.out.println("Count of odd integers in the given sequence is: " + oddCount);
+
                 break;
             case 4:
                 System.out.println("Enter a number:");
