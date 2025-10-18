@@ -70,7 +70,7 @@ public class Project {
                 System.out.println("Enter the second integer: ");
                 int y = scanner.nextInt();
                 
-                //code that calculates the gcd of the two integers entered and prints it
+                //Calculates the gcd of the two integers entered and prints it
                 int a = x, b = y;
                 while (b != 0) {
                     int temp = b;
