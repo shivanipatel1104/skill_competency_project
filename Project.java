@@ -44,7 +44,7 @@ public class Project {
                 length = scanner.nextInt();
                 System.out.println("Enter the sequence");
 
-                //code that calculates the count of odd integers and prints it
+                //Calculates the count of odd integers and prints it
                 int oddCount = 0;
                 for (int i = 0; i < length; i++) {
                     int num = scanner.nextInt();
@@ -58,8 +58,8 @@ public class Project {
             case 4:
                 System.out.println("Enter a number:");
                 userInput1 = scanner.nextInt();
-                
-                //code that displays the leftmost digit of a number and prints it
+
+                //Displays the leftmost digit of a number and prints it
                 int leftmost = Integer.parseInt(Integer.toString(userInput1).substring(0, 1));
                 System.out.println("Leftmost digit of " + userInput1 + " is: " + leftmost);
                 
@@ -69,7 +69,16 @@ public class Project {
                 int x = scanner.nextInt();
                 System.out.println("Enter the second integer: ");
                 int y = scanner.nextInt();
+                
                 //code that calculates the gcd of the two integers entered and prints it
+                int a = x, b = y;
+                while (b != 0) {
+                    int temp = b;
+                    b = a % b;
+                    a = temp;
+                }
+                System.out.println("GCD of " + x + " and " + y + " is: " + a);
+                
                 break;
             case 6:
                 System.out.println("Bye");
