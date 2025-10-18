@@ -58,7 +58,11 @@ public class Project {
             case 4:
                 System.out.println("Enter a number:");
                 userInput1 = scanner.nextInt();
+                
                 //code that displays the leftmost digit of a number and prints it
+                int leftmost = Integer.parseInt(Integer.toString(userInput1).substring(0, 1));
+                System.out.println("Leftmost digit of " + userInput1 + " is: " + leftmost);
+                
                 break;
             case 5:
                 System.out.println("Enter the first integer: ");
