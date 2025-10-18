@@ -25,12 +25,19 @@ public class Project {
                     sum += i;
                 }
                 System.out.println("Sum of integers from 1 to " + userInput1 + " is: " + sum);
-                
+
                 break;
             case 2:
                 System.out.println("Enter a number:");
                 userInput1 = scanner.nextInt();
-                //code that finds the factorial of number entered by teh user and print it
+
+                //Finds the factorial of number entered by the user and print it
+                fac = 1;
+                for (int i = 1; i <= userInput1; i++) {
+                    fac *= i;
+                }
+                System.out.println("Factorial of " + userInput1 + " is: " + fac);
+
                 break;
             case 3:
                 System.out.println("Enter the length of sequence");
